@@ -29,13 +29,17 @@ export async function getPostBySlug(slug: string, dataType?: string) {
   };
 }
 
-export async function getAllPostsWithFrontMatter(dataType: string) {
-  const files = fs.readdirSync(path.join(root, "content", dataType));
+export async function getAllPostsWithFrontMatter(dataType?: string) {
+  const files = fs.readdirSync(
+    dataType ? path.join(root, "content", dataType) : path.join(root, "content")
+  );
 
   // @ts-ignore
   return files.reduce((allPosts, postSlug) => {
     const source = fs.readFileSync(
-      path.join(root, "content", dataType, postSlug),
+      dataType
+        ? path.join(root, "content", dataType, postSlug)
+        : path.join(root, "content", postSlug),
       "utf8"
     );
     const { data } = matter(source);
