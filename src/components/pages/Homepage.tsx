@@ -13,7 +13,7 @@ export const Homepage = ({posts}) => {
 
           <p className={styles.description}>
             Get started by editing{" "}
-            <code className={styles.code}>pages/index.js</code>
+            <code className={styles.code}>src/components/pages/Homepage.tsx</code>
           </p>
           <PostLising allPosts={posts} />
         </main>
