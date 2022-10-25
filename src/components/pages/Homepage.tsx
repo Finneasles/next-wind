@@ -1,8 +1,7 @@
 import styles from "@/styles/Home.module.css";
-import { Footer, Layout } from "@/components";
+import { Layout } from "@/components";
 
 export const Homepage = () => {
-
   const Grid = () => {
     const Item = ({ title, description, href }) => {
       return (
@@ -18,17 +17,23 @@ export const Homepage = () => {
         <Item
           href="https://nextjs.org/docs"
           title={"Documentation"}
-          description={"Find in-depth information about Next.js features and API."}
+          description={
+            "Find in-depth information about Next.js features and API."
+          }
         />
         <Item
           href="https://nextjs.org/learn"
           title={"Learn"}
-          description={"Learn about Next.js in an interactive course with quizzes!"}
+          description={
+            "Learn about Next.js in an interactive course with quizzes!"
+          }
         />
         <Item
           href="https://nextjs.org/examples"
           title={"Examples"}
-          description={"Discover and deploy boilerplate example Next.js projects."}
+          description={
+            "Discover and deploy boilerplate example Next.js projects."
+          }
         />
         <Item
           href="https://nextjs.org/deploy"
@@ -56,7 +61,6 @@ export const Homepage = () => {
 
           <Grid />
         </main>
-        <Footer />
       </div>
     </Layout>
   );

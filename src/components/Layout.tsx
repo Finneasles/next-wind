@@ -1,6 +1,11 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
-import { defaultStaticTitle  as defaultTitle, staticTitleEnd as TitleEnd } from "@/utils"
+import { Footer } from "@/components/";
+import {
+  getDefaultStaticTitle as defaultTitle,
+  getStaticTitleEnd as TitleEnd,
+} from "@/utils";
+
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -20,7 +25,7 @@ export const Layout = ({ children, title = defaultTitle() }: Props) => {
       </Head>
       <header>{/* <Navbar /> */}</header>
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
