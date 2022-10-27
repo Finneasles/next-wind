@@ -7,7 +7,15 @@ export const MdContent = ({ source }) => {
     setSource(source);
   }, [setSource, source]);
 
-  return <article className="prose lg:prose-md">{content}</article>;
+  return (
+    <article
+      className="prose prose-slate lg:prose-md prose-img:rounded-xl
+    dark:prose-headings:text-gray-200 prose-headings:underline 
+    dark:prose-p:text-slate-400"
+    >
+      {content}
+    </article>
+  );
 };
 
 export default MdContent;
