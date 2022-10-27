@@ -1,5 +1,5 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
 class MyDocument extends Document {
   render() {
@@ -7,8 +7,8 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body
-          className="bg-white text-black
-          dark:bg-black dark:text-white"
+          className="bg-grey-100 text-black
+          dark:bg-gray-900 dark:text-white"
         >
           <Main />
           <NextScript />
