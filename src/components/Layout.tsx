@@ -42,7 +42,6 @@ export const Layout = ({ children, title = defaultTitle() }: Props) => {
         <Navbar menuData={navData} />
       </header>
       <div className="pt-[6rem]">{children}</div>
-      {children}
       <Footer />
     </div>
   );
