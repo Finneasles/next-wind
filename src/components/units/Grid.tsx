@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "@/styles/Home.module.css";
 
 export const Grid = () => {
   const Item = ({ title, description, href }) => {
     return (
-      <a href={href} className={styles.card}>
+      <a href={href}>
         <h2>{title} &rarr;</h2>
         <p>{description}</p>
       </a>
@@ -12,7 +11,7 @@ export const Grid = () => {
   };
 
   return (
-    <div className={styles.grid}>
+    <div>
       <Item
         href="https://nextjs.org/docs"
         title={"Documentation"}

@@ -1,12 +1,4 @@
-export { default as Layout } from "@/components/Layout";
-export { default as MdContent } from "@/components/MdContent";
-export { default as ThemeSwitch } from "@/components/ThemeSwitch";
-export { default as Footer } from "@/components/Footer";
-export { default as Homepage } from "@/components/pages/Homepage";
-export { default as ContentPage } from "@/components/pages/Content";
-export { default as MobileMenu } from "@/components/MobileMenu";
-export { default as PostLising } from "@/components/PostLising";
-export { default as Post } from "@/components/Post";
-export { default as Navbar } from "@/components/Navbar";
-export { default as Nav } from "@/components/Nav";
-export { default as CTA } from "@/components/CTA";
+export * from "@/components/layout";
+export * from "@/components/pages";
+export * from "@/components/sections";
+export * from "@/components/units";

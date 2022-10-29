@@ -1,7 +1,7 @@
 import React from "react";
 import { Post } from "@/components";
 
-export const PostLising = ({ allPosts }) => {
+export const PostSection = ({ allPosts }) => {
   return (
     <ul>
       {allPosts.map((e: any) => {
@@ -11,4 +11,4 @@ export const PostLising = ({ allPosts }) => {
   );
 };
 
-export default PostLising;
+export default PostSection;

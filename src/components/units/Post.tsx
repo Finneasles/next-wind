@@ -7,8 +7,8 @@ export const Post = ({ data }) => {
       <h1>
         <Link href={data.slug}>
           <a
-            className="underline text-blue-600 hover:text-blue-800 
-          visited:text-purple-600"
+            className="text-blue-600 underline visited:text-purple-600 
+          hover:text-blue-800"
           >
             {data.frontMatter.title}
           </a>

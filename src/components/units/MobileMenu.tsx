@@ -4,11 +4,11 @@ export const MobileMenu = ({ data, state }) => {
   return (
     <div className="md:hidden">
       {state.visible ? (
-        <div className="fixed bg-gray-900 w-[24rem] right-[-1px] top-0 h-[100vh] transition translate-x-[-1px] text-white">
-          <div className="pt-5 pb-6 px-5">
+        <div className="fixed right-[-1px] top-0 h-[100vh] w-[24rem] translate-x-[-1px] bg-gray-900 text-white transition">
+          <div className="px-5 pt-5 pb-6">
             <button
               onClick={() => state.setMobileMenu(!state.visible)}
-              className="-mr-2 float-right mb-3"
+              className="float-right -mr-2 mb-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,13 +27,13 @@ export const MobileMenu = ({ data, state }) => {
               </svg>
             </button>
 
-            <div className="mt-[5rem] z-10 relative">
+            <div className="relative z-10 mt-[5rem]">
               <nav className="grid gap-y-8">
                 {data.map((item: { name: string; href: string }) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-black/20  border-[1px] border-gray-500/60"
+                    className="-m-3 flex items-center rounded-md border-[1px] border-gray-500/60  p-3 hover:bg-black/20"
                   >
                     <h1 className="my-3 ml-3 font-bold ">{item.name}</h1>
                   </a>

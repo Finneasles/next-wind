@@ -1,17 +1,17 @@
-import styles from "@/styles/Home.module.css";
 import { Layout, MdContent } from "@/components";
 import { useState } from "react";
 
-export const ContentPage = ({ content }) => {
-  const [pageTitle] = useState(content.frontMatter.title);
-  const [pageContent] = useState(content.markdownBody);
+const pageTitle = "Content Page";
+export const ContentPage = ({ source }) => {
+  const [title] = useState(source.frontMatter.title);
+  const [content] = useState(source.markdownBody);
 
   return (
-    <Layout title={pageTitle}>
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>{pageTitle}</h1>
-          <MdContent source={pageContent} />
+    <Layout title={title}>
+      <div>
+        <main>
+          <h1>{title}</h1>
+          <MdContent source={content} />
         </main>
       </div>
     </Layout>
