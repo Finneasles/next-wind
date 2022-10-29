@@ -5,7 +5,7 @@ import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
 function Content({ frontMatter, markdownBody }) {
   return (
-    <ContentPage content={{ frontMatter, markdownBody }}/>
+    <ContentPage source={{ frontMatter, markdownBody }}/>
   );
 }
 
