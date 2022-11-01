@@ -9,7 +9,7 @@ export const Footer = () => {
       className="border-t border-white/10 bg-gray-100 dark:bg-gray-900"
     >
       <div className="">
-        <div className="p-6 sm:p-8 lg:px-12">
+        <div className="p-6 lg:px-32">
           <div className="lg:flex lg:gap-8">
             <div>
               <span className="block h-10 w-32 rounded-lg bg-gray-700"></span>
@@ -34,7 +34,7 @@ export const Footer = () => {
                     Email{" "}
                   </label>
 
-                  <div className="rounded-md border border-white/10 p-2 sm:flex sm:items-center">
+                  <div className="rounded-md border border-gray-200 dark:border-white/10 p-2 sm:flex sm:items-center">
                     <input
                       className="h-12 w-full border-none bg-transparent p-3 text-sm font-medium uppercase tracking-widest placeholder-gray-400"
                       type="email"
@@ -183,8 +183,8 @@ export const Footer = () => {
                 : ""}{" "}
               All rights reserved.
             </p>
-
-            <nav className="flex justify-center gap-4 text-xs lg:justify-end">
+          
+            <nav className="flex justify-center text-xs lg:justify-end">
               <ThemeSwitch />
             </nav>
           </div>

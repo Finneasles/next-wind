@@ -3,11 +3,11 @@ import { BackgroundLayer } from "@/components";
 
 export const HeroContainer = ({ children }) => {
   return (
-    <div className="relative flex h-[50vh] min-h-[150px] content-center items-center justify-center pt-16">
+    <div className="relative flex h-[60vh] min-h-[150px] content-center items-center justify-center">
       <BackgroundLayer />
-      <div className="container relative mx-auto">
+      <div className="relative w-full">
         <div className="flex flex-wrap items-center">
-          <div className="ml-auto mr-auto w-full px-4 text-center lg:w-6/12">
+          <div className="w-full">
             {children}
           </div>
         </div>

@@ -29,7 +29,8 @@ export const Card = ({ cta, description, href, title }: Props) => {
           </p>
           <Button
             href={href}
-            icon={<BsArrowRight className="ml-2 -mr-1 h-4 w-4" />}
+            icon={<BsArrowRight className="ml-2 -mr-1 h-4 w-4"  />}
+            variant={"secondary"}
           >
             {cta}
           </Button>
