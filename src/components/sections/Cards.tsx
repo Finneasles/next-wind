@@ -7,21 +7,21 @@ const cardsData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum ante nec tincidunt iaculis. Duis.",
     cta: "Dolor sit",
-    href: "/home",
+    href: "/neque",
   },
   {
     title: "Mauris Feugiat",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum ante nec tincidunt iaculis. Duis.",
     cta: "Dolor sit",
-    href: "/home",
+    href: "/mauris",
   },
   {
     title: "Suspendisse Mattis",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum ante nec tincidunt iaculis. Duis.",
     cta: "Dolor sit",
-    href: "/home",
+    href: "/mattis",
   },
 ];
 
@@ -33,15 +33,16 @@ export const Cards = () => {
   }, []);
 
   return (
-    <section className="bg-blueGray-200 -mt-24 pb-10">
+    <section className="bg-blueGray-200 -mt-24 pb-4">
       <CardsContainer>
         {cards.map((card) => {
           return (
             <Card
+              cta={card.cta}
+              description={card.description}
+              href={card.href}
               key={card.title}
               title={card.title}
-              description={card.description}
-              cta={card.cta}
             />
           );
         })}

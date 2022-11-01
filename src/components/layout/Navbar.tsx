@@ -11,13 +11,13 @@ export const Navbar = ({ menuData }) => {
   const [visible, setMobileMenu] = useState(false);
 
   return (
-    <div className="fixed h-[6rem] w-full border-b border-white/10 bg-gray-100 bg-opacity-80 px-6 uppercase backdrop-blur-xl dark:border-white/10 dark:bg-gray-900 sm:px-8 lg:px-12 ">
+    <div className="fixed z-10 h-[6rem] w-full border-b border-white/10 bg-gray-100 bg-opacity-80 px-6 backdrop-blur-xl dark:border-white/10 dark:bg-gray-900 sm:px-8 lg:px-12">
       <div className="mx-auto flex h-full w-full items-center justify-between text-sm">
         <Link href="/">
           <h1 className="flex items-center text-center">
             <div className="lg:flex lg:gap-8">
               <div>
-                <span className="block h-10 w-[10rem] rounded-lg bg-gray-700"></span>
+                <span className="block h-10 w-[2.5rem] rounded-lg bg-gray-700 md:w-[8rem] lg:w-[10rem]"></span>
               </div>
             </div>
           </h1>

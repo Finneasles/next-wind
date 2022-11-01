@@ -2,7 +2,7 @@ import {
   getDefaultStaticTitle as defaultTitle,
   getStaticTitleEnd as TitleEnd,
 } from "@/utils";
-import { Footer, Navbar } from "@/components/";
+import { Footer, Navbar } from "@/components";
 import React, { ReactNode } from "react";
 import Head from "next/head";
 
@@ -14,7 +14,7 @@ type Props = {
 const navData = [
   {
     name: "Home",
-    href: "/home",
+    href: "/",
   },
   {
     name: "About",
