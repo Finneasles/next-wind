@@ -2,13 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const root = process.cwd();
+const root = process.cwd() + "/src/content";
 
 export async function getFiles(dataType?: string) {
   return fs.readdirSync(
     dataType
-      ? path.join(root, "content", dataType)
-      : path.join(root, "content"),
+      ? path.join(root, dataType)
+      : path.join(root),
     "utf-8"
   );
 }
@@ -16,8 +16,8 @@ export async function getFiles(dataType?: string) {
 export async function getPostBySlug(slug: string, dataType?: string) {
   const source = fs.readFileSync(
     dataType
-      ? path.join(root, "content", dataType, `${slug}.md`)
-      : path.join(root, "content", `${slug}.md`),
+      ? path.join(root, dataType, `${slug}.md`)
+      : path.join(root, `${slug}.md`),
     "utf8"
   );
 
@@ -31,15 +31,15 @@ export async function getPostBySlug(slug: string, dataType?: string) {
 
 export async function getAllPostsWithFrontMatter(dataType?: string) {
   const files = fs.readdirSync(
-    dataType ? path.join(root, "content", dataType) : path.join(root, "content")
+    dataType ? path.join(root, dataType) : path.join(root)
   );
 
   // @ts-ignore
   return files.reduce((allPosts, postSlug) => {
     const source = fs.readFileSync(
       dataType
-        ? path.join(root, "content", dataType, postSlug)
-        : path.join(root, "content", postSlug),
+        ? path.join(root, dataType, postSlug)
+        : path.join(root, postSlug),
       "utf8"
     );
     const { data } = matter(source);
@@ -55,12 +55,12 @@ export async function getAllPostsWithFrontMatter(dataType?: string) {
 }
 
 async function collateCategories(dataType: string) {
-  const files = fs.readdirSync(path.join(root, "content", dataType));
+  const files = fs.readdirSync(path.join(root, dataType));
   let allCategories = new Set<string>(); // to ensure only unique tags are added
 
   files.map((postSlug) => {
     const source = fs.readFileSync(
-      path.join(root, "content", dataType, postSlug),
+      path.join(root, dataType, postSlug),
       "utf8"
     );
     const { data } = matter(source);
