@@ -28,16 +28,16 @@ export const CommentSection = () => {
       <article className="mb-6 rounded-lg bg-white text-base dark:bg-gray-900">
         <footer className="mb-2 flex items-center justify-between">
           <div className="flex items-center">
-            <p className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
-              <div className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
+            <div className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
+              <figure className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
                 <Image
                   layout="fill"
-                  src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                  src="/images/authors/aliquam.jpg"
                   alt="Michael Gough"
                 />
-              </div>
+              </figure>
               Michael Gough
-            </p>
+            </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               <time dateTime="2022-02-08" title="February 8th, 2022">
                 Feb. 8, 2022
@@ -117,9 +117,9 @@ export const CommentSection = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               ></path>
             </svg>
@@ -130,16 +130,16 @@ export const CommentSection = () => {
       <article className="mb-6 ml-6 rounded-lg bg-white p-6 text-base dark:bg-gray-900 lg:ml-12">
         <footer className="mb-2 flex items-center justify-between">
           <div className="flex items-center">
-            <p className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
-              <div className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
+            <div className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
+              <figure className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
                 <Image
                   layout="fill"
-                  src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                  src="/images/authors/aliquam.jpg"
                   alt="Jese Leos"
                 />
-              </div>
+              </figure>
               Jese Leos
-            </p>
+            </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               <time dateTime="2022-02-12" title="February 12th, 2022">
                 Feb. 12, 2022
@@ -213,9 +213,9 @@ export const CommentSection = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               ></path>
             </svg>
@@ -226,16 +226,16 @@ export const CommentSection = () => {
       <article className="mb-6 border-t border-gray-200 bg-white p-6 text-base dark:border-gray-700 dark:bg-gray-900">
         <footer className="mb-2 flex items-center justify-between">
           <div className="flex items-center">
-            <p className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
-              <div className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
+            <div className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
+              <figure className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
                 <Image
                   layout="fill"
-                  src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                  src="/images/authors/aliquam.jpg"
                   alt="Bonnie Green"
                 />
-              </div>
+              </figure>
               Bonnie Green
-            </p>
+            </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               <time dateTime="2022-03-12" title="March 12th, 2022">
                 Mar. 12, 2022
@@ -312,9 +312,9 @@ export const CommentSection = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               ></path>
             </svg>
@@ -325,16 +325,16 @@ export const CommentSection = () => {
       <article className="border-t border-gray-200 bg-white p-6 text-base dark:border-gray-700 dark:bg-gray-900">
         <footer className="mb-2 flex items-center justify-between">
           <div className="flex items-center">
-            <p className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
-              <div className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
+            <div className="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white">
+              <figure className="relative mr-2 h-6 w-6 overflow-hidden rounded-full">
                 <Image
                   layout="fill"
-                  src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
+                  src="/images/authors/aliquam.jpg"
                   alt="Helene Engels"
                 />
-              </div>
+              </figure>
               Helene Engels
-            </p>
+            </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               <time dateTime="2022-06-23" title="June 23rd, 2022">
                 Jun. 23, 2022
@@ -410,9 +410,9 @@ export const CommentSection = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               ></path>
             </svg>

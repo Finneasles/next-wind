@@ -28,13 +28,16 @@ const navData = [
 
 export const Layout = ({ children, title = defaultTitle() }: Props) => {
   const [scrollY, setScrollY] = useState(0);
+  const [progress, setProgress] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
+      setProgress((window.scrollY / window.innerHeight ) * 100)
+      console.log(progress);
     };
-    
-    handleScroll();
 
+    handleScroll();
+    console.log(window.innerHeight);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -51,8 +54,16 @@ export const Layout = ({ children, title = defaultTitle() }: Props) => {
         width=device-width"
         />
       </Head>
+      <div className="fixed top-0 z-20 h-1 w-full">
+        <div className="h-1 w-full bg-gray-200 dark:bg-gray-700">
+          <div className="h-1 bg-blue-600" style={{ width: `${progress}%` }}></div>
+        </div>
+      </div>
       <header>
-        <Navbar menuData={navData} variant={scrollY > 100 ? "fixed" : "primary"} />
+        <Navbar
+          menuData={navData}
+          variant={scrollY > 100 ? "fixed" : "primary"}
+        />
       </header>
       <div>{children}</div>
       <Footer />
