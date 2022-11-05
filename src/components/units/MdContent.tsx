@@ -9,8 +9,8 @@ export const MdContent = ({ source }) => {
 
   return (
     <article
-      className="lg:prose-md prose prose-slate prose-headings:underline
-    prose-img:rounded-xl dark:prose-headings:text-gray-200 
+      className="lg:prose-md prose prose-slate mb-8
+     prose-img:rounded-xl dark:prose-headings:text-gray-200
     dark:prose-p:text-slate-400"
     >
       {content}

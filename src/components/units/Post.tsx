@@ -12,7 +12,7 @@ export const Post = ({ data }) => {
     );
   };
   return (
-    <article className="rounded-lg border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+    <article className="rounded-sm border border-gray-200 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
       <div className="mb-5 flex items-center justify-between text-gray-500">
         <div className="flex">
           {data.frontMatter.categories.map((tag: string) => {
@@ -23,7 +23,7 @@ export const Post = ({ data }) => {
       </div>
 
       <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href={"posts/" + data.slug}>
+        <Link href={"p/" + data.slug}>
           <a>{data.frontMatter.title}</a>
         </Link>
       </h2>
@@ -32,10 +32,10 @@ export const Post = ({ data }) => {
       </p>
       <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <div className="flex w-full flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-2">
-          <Button>Read More</Button>
-            <div className="flex space-x-2">
-            <div className="relative h-7 w-7">
+          <div className="flex w-full flex-col-reverse lg:flex-row lg:space-y-0 lg:space-x-2">
+            <Button>Read More</Button>
+            <div className="mb-5 flex space-x-2">
+              <div className="relative h-7 w-7">
                 <Image
                   className="h-7 w-7 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
@@ -44,7 +44,7 @@ export const Post = ({ data }) => {
                 />
               </div>
               <span className="font-medium dark:text-white">
-                {data.frontMatter.author}
+                {data.frontMatter.author.name}
               </span>
             </div>
           </div>

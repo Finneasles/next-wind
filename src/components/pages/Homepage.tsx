@@ -14,9 +14,12 @@ export const Homepage = ({ posts }) => {
     <Layout title={title}>
       <Hero />
       <div className="px-6 lg:px-32">
-        {" "}
-        <Cards />
-        <Posts allPosts={posts} />
+        <div className="mb-16">
+          <Cards />
+        </div>
+        <div className="mb-16">
+          <Posts allPosts={posts} />
+        </div>
       </div>
     </Layout>
   );

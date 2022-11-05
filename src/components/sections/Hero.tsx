@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <HeroContainer>
       <div className="flex p-6 pb-8 text-left sm:p-8 lg:px-32">
         <div className="relative w-full place-self-center">
-          <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+          <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight text-white dark:text-white md:text-5xl xl:text-6xl">
             Curabitur in ligula ante. Integer.
           </h1>
           <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">

@@ -13,7 +13,7 @@ export const Card = ({ cta, description, href, title }: Props) => {
     <div className="w-full text-center md:w-4/12">
       <div
         className="relative mb-4 flex w-full min-w-0 flex-col break-words
-        rounded-lg border border-gray-200 bg-white p-6 shadow-md
+        rounded-sm border border-gray-200 bg-white p-6 shadow-md
         dark:border-gray-700 dark:bg-gray-800"
       >
         <div className="flex-auto px-4 py-4">
@@ -29,7 +29,7 @@ export const Card = ({ cta, description, href, title }: Props) => {
           </p>
           <Button
             href={href}
-            icon={<BsArrowRight className="ml-2 -mr-1 h-4 w-4"  />}
+            icon={<BsArrowRight className="ml-2 -mr-1 h-4 w-4" />}
             variant={"secondary"}
           >
             {cta}

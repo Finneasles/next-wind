@@ -33,7 +33,7 @@ export const Cards = () => {
   }, []);
 
   return (
-    <section className="bg-blueGray-200 -mt-20 pb-4">
+    <section className="-mt-20">
       <CardsContainer>
         {cards.map((card) => {
           return (

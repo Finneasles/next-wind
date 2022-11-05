@@ -2,8 +2,8 @@ import {
   getDefaultStaticTitle as defaultTitle,
   getStaticTitleEnd as TitleEnd,
 } from "@/utils";
-import { Footer, Navbar } from "@/components";
-import React, { ReactNode } from "react";
+import { CookieConsent, Footer, Navbar } from "@/components";
+import React, { ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 
 type Props = {
@@ -27,6 +27,19 @@ const navData = [
 ];
 
 export const Layout = ({ children, title = defaultTitle() }: Props) => {
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
       <Head>
@@ -39,10 +52,11 @@ export const Layout = ({ children, title = defaultTitle() }: Props) => {
         />
       </Head>
       <header>
-        <Navbar menuData={navData} />
+        <Navbar menuData={navData} variant={scrollY > 100 ? "fixed" : "primary"} />
       </header>
-      <div className="pt-[6rem]">{children}</div>
+      <div>{children}</div>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };

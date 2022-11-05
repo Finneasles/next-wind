@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeSwitch } from "@/components";
 import { Button } from "@/components";
 
+
 export const Footer = () => {
   return (
     <footer
@@ -12,7 +13,7 @@ export const Footer = () => {
         <div className="p-6 lg:px-32">
           <div className="lg:flex lg:gap-8">
             <div>
-              <span className="block h-10 w-32 rounded-lg bg-gray-700"></span>
+              <span className="block h-10 w-32 rounded-sm bg-gray-400 dark:bg-gray-700"></span>
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
@@ -34,14 +35,17 @@ export const Footer = () => {
                     Email{" "}
                   </label>
 
-                  <div className="rounded-md border border-gray-200 dark:border-white/10 p-2 sm:flex sm:items-center">
+                  <div className="rounded-sm border border-gray-200 p-2 dark:border-white/10 sm:flex sm:items-center">
                     <input
                       className="h-12 w-full border-none bg-transparent p-3 text-sm font-medium uppercase tracking-widest placeholder-gray-400"
                       type="email"
                       id="email"
                       placeholder="Enter your email"
                     />
-                    <Button className="h-12 w-full tracking-wide sm:ml-4 sm:mt-0 sm:w-auto sm:flex-shrink-0" type="submit">
+                    <Button
+                      className="h-12 w-full tracking-wide sm:ml-4 sm:mt-0 sm:w-auto sm:flex-shrink-0"
+                      type="submit"
+                    >
                       Sign Up
                     </Button>
                   </div>
@@ -174,17 +178,17 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 p-6 pt-8 sm:p-8 lg:p-12">
+        <div className="mt-12 border-t border-gray-200 bg-gray-200 px-6 py-12 dark:border-white/10 dark:bg-gray-800 lg:px-32">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <p className="text-center text-xs lg:text-left">
+            <p className="text-left text-xs">
               Copyright &copy; {new Date().getFullYear()}.{" "}
               {process.env.NEXT_PUBLIC_STATIC_TITLE
                 ? process.env.NEXT_PUBLIC_STATIC_TITLE + "."
                 : ""}{" "}
               All rights reserved.
             </p>
-          
-            <nav className="flex justify-center text-xs lg:justify-end">
+
+            <nav className="flex justify-start text-xs lg:justify-end">
               <ThemeSwitch />
             </nav>
           </div>
