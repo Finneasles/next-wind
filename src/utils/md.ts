@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-const contentDir = "/src/content";
-const root = process.env.NODE_ENV == "production" ? contentDir : process.cwd() + contentDir;
+
+const root = process.cwd() + "/src/content";
 
 export async function getFiles(dataType?: string) {
   return fs.readdirSync(
