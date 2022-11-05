@@ -2,8 +2,12 @@
 title: "Lorem ipsum2"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at interdum leo, sed porttitor lorem."
 categories: [ "Lorem","Ipsum" ]
+comments: true
+relatedArticles: true
 date: "Mar 25, 2022"
-author: "Aliquam"
+figure: "https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png"
+figcaption: "tdsc"
+author: {name : "Aliquam" , description: "Graphic Designer, educator & CEO" , image: "/images/authors/aliquam.jpg"}
 ---
 # Lorem ipsum dolor sit amet
 consectetur adipiscing elit. Etiam mollis dapibus libero, vitae sagittis libero pharetra vel. Donec at ligula est. Donec tincidunt tortor quis leo vulputate ornare. Pellentesque massa nulla, volutpat at odio non, lacinia posuere quam. Nullam diam mi, cursus ultricies lacinia quis, suscipit sit amet nisl. Phasellus ullamcorper fermentum eros, vulputate congue est tempus quis. Phasellus porttitor ullamcorper volutpat. Pellentesque in vestibulum ipsum. Sed eget neque augue. Suspendisse tristique augue eleifend nulla faucibus fringilla. In id metus eros. Etiam placerat ex leo, in semper est pretium quis. Proin nec dui porta, vehicula est ac, sodales felis. Vestibulum scelerisque cursus turpis vitae hendrerit. Aliquam ut nunc at eros bibendum condimentum id in ligula.
